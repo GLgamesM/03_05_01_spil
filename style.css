@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#screen {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.hide {
+    visibility: hidden;
+}
+.show {
+    visibility: visible;
+}
+.blur {
+    filter: blur(5px) brightness(80%);
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.97);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#menu_background {
+    position: absolute;
+    background-image: url(Game_elements/1x/titleScreen.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+
+}
+
+#jail{
+    position: absolute;
+    background-image: url(Game_elements/1x/jail.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+#levelcomplete {
+    position: absolute;
+    background-image: url(Game_Elements/1x/winscreen.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+
+}
+
+#gameover {
+    position: absolute;
+    background-image: url(Game_Elements/1x/gameover.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+#play {
+    position: absolute;
+    background-image: url(Game_elements/SVG/play.svg);
+    width: 25vw;
+    height: 25vw;
+    top: 20vw;
+    left: 18vw;
+    cursor: pointer;
+}
+
+#game {
+    position: absolute;
+    background-image: url(Game_elements/1x/bg.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+
+}
+
+#questionbox {
+    position: absolute;
+    background-image: url(Game_Elements/SVG/questionbox.svg);
+    width: 60vw;
+    height: 58vw;;
+    top: -3vw;
+    left: 5vw;
+    background-repeat: no-repeat;
+
+}
+
+
+/************ svarmuligheder  *********************/
+
+#svar1 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 20vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar2 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 26vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar3 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 32vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+}
+
+#svar1_1 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed1_1.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 20vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar1_2 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed1_2.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 26vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar1_3 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed1_3.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 32vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+}
+
+#svar2_1 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed2_1.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 20vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar2_2 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed2_2.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 26vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar2_3 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed2_3.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 32vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+}
+
+#svar3_1 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed3_1.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 20vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar3_2 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed3_2.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 26vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar3_3 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed3_3.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 32vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+}
+
+#svar4_1 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed4_1.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 20vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar4_2 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed4_2.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 26vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar4_3 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed4_3.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 32vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+}
+
+#svar5_1 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed5_1.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 20vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar5_2 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed5_2.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 26vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar5_3 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed5_3.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 32vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+}
+
+#svar6_1 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed6_1.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 20vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar6_2 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed6_2.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 26vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+
+}
+
+#svar6_3 {
+    position: absolute;
+    background-image: url(Game_elements/SVG/Svarmulighed6_3.svg);
+    width: 40vw;
+    height: 6vw;
+    top: 32vw;
+    left: 5.8vw;
+    cursor: pointer;
+
+}
+
+
+/************ spørgsmål ************/
+
+#questions1{
+     position: absolute;
+    background-image: url(Game_elements/SVG/question1.svg);
+    width: 46vw;
+    height: 20vw;
+    top: 3.5vw;
+    left: 9vw;
+}
+
+#questions2{
+     position: absolute;
+    background-image: url(Game_elements/SVG/question2.svg);
+    width: 46vw;
+    height: 20vw;
+    top: 3.5vw;
+    left: 9vw;
+}
+
+#questions3{
+    position: absolute;
+    background-image: url(Game_elements/SVG/question3.svg);
+    width: 46vw;
+    height: 20vw;
+    top: 3.5vw;
+    left: 9vw;
+}
+
+#questions4{
+     position: absolute;
+    background-image: url(Game_elements/SVG/question4.svg);
+    width: 46vw;
+    height: 20vw;
+    top: 3.5vw;
+    left: 9vw;
+}
+
+#questions5{
+     position: absolute;
+    background-image: url(Game_elements/SVG/question5.svg);
+    width: 46vw;
+    height: 20vw;
+    top: 3.5vw;
+    left: 9vw;
+}
+
+#questions6{
+    position: absolute;
+    background-image: url(Game_elements/SVG/question6.svg);
+    width: 46vw;
+    height: 20vw;
+    top: 3.5vw;
+    left: 9vw;
+}
+
+/******** Main character  *********/
+
+#hovedperson {
+     position: absolute;
+    background-image: url(Game_elements/SVG/MC.svg);
+    width: 27vw;
+    height: 42vw;
+    top: 15vw;
+    left: -5vw;
+}
+
+#hand_phone {
+    position: absolute;
+    background-image: url(Game_elements/SVG/hand_phone.svg);
+    width: 15vw;
+    height: 20vw;
+    top: 37.5vw;
+    left: 25vw;
+}
+
+/******* Pige  ************/
+
+#pige_sprite {
+    position:absolute;
+    background-image: url(Game_Elements/SVG/pige.svg);
+    height: 49vw;
+    width: 35vw;
+    top: 12vw;
+    left: 67vw;
+
+}
+
+#beskeder {
+    position:absolute;
+    background-image: url(Game_Elements/SVG/beskeder2.svg);
+    height: 21vw;
+    width: 35vw;
+    top: 0vw;
+    left: 64vw;
+}
+
+/******* UI  ********/
+
+#points1 {
+    position:absolute;
+    background-image: url(Game_Elements/SVG/point0.svg);
+    height: 18vw;
+    width: 18vw;
+    top: 18vw;
+    left: 65vw;
+}
+#points2 {
+    position:absolute;
+    background-image: url(Game_Elements/SVG/point1.svg);
+    height: 18vw;
+    width: 18vw;
+    top: 18vw;
+    left: 65vw;
+}
+#points3 {
+    position:absolute;
+    background-image: url(Game_Elements/SVG/point2.svg);
+    height: 18vw;
+    width: 18vw;
+    top: 18vw;
+    left: 65vw;
+}
+#points4 {
+    position:absolute;
+    background-image: url(Game_Elements/SVG/point3.svg);
+    height: 18vw;
+    width: 18vw;
+    top: 18vw;
+    left: 65vw;
+}
+#points5 {
+    position:absolute;
+    background-image: url(Game_Elements/SVG/point4.svg);
+    height: 18vw;
+    width: 18vw;
+    top: 18vw;
+    left: 65vw;
+}
+#points6 {
+    position:absolute;
+    background-image: url(Game_Elements/SVG/point5.svg);
+    height: 18vw;
+    width: 18vw;
+    top: 18vw;
+    left: 65vw;
+}
