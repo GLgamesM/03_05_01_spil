@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#screen {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.blur {
+    filter: blur(5px) brightness(80%);
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#menu_background {
+    position: absolute;
+    background-image: url(Game_elements/1x/titleScreen.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+
+}
+
+#jail {
+    position: absolute;
+    background-image: url(karakter-beskeder/gameover%20copy.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+#levelcomplete {
+    position: absolute;
+    background-image: url(karakter-beskeder/winscreen.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+
+}
+
+#gameover {
+    position: absolute;
+    background-image: url(karakter-beskeder/gameover.png);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+#play {
+    position: absolute;
+    background-image: url(Game_elements/SVG/play.svg);
+    width: 25vw;
+    height: 25vw;
+    top: 20vw;
+    left: 18vw;
+    cursor: pointer;
+}
+
+#game {
+    position: absolute;
+    background-image: url(karakter-beskeder/baggrund.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+/************ svarmuligheder  *********************/
+
+
+#svar1_1 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar1besked1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 32vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar1_2 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar2besked1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 40vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar1_3 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar3besked1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 48vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+}
+
+#svar2_1 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar1besked2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 32vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar2_2 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar2besked2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 40vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar2_3 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar3besked2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 48vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+}
+
+#svar3_1 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar1besked3.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 32vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar3_2 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar2besked3.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 40vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar3_3 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar3besked3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 48vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar4_1 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar1besked4.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 3vw;
+    top: 32vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar4_2 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar2besked4.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 3vw;
+    top: 40vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar4_3 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar3besked4.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 3vw;
+    top: 48vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+}
+
+#svar5_1 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar1besked5.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 32vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar5_2 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar2besked5.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 5vw;
+    top: 40vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+
+}
+
+#svar5_3 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar3besked5.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 11vw;
+    top: 45.3vw;
+    left: 34vw;
+    cursor: pointer;
+
+
+}
+
+#svar6_1 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar1besked6.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 32vw;
+    left: 34vw;
+    cursor: pointer;
+    visibility: visible;
+
+
+}
+
+#svar6_2 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar2besked6.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 40vw;
+    left: 34vw;
+    cursor: pointer;
+    visibility: visible;
+
+
+}
+
+#svar6_3 {
+    position: absolute;
+    background-image: url(karakter-beskeder/svar3besked6.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30.66vw;
+    height: 7.33vw;
+    top: 48vw;
+    left: 34vw;
+    cursor: pointer;
+    visibility: visible;
+
+}
+
+
+/************ spørgsmål ************/
+
+#questions1 {
+    position: absolute;
+    background-image: url(karakter-beskeder/besked1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 24.6vw;
+    height: 43.6vw;
+    top: 6.25vw;
+    left: 7.6vw;
+
+
+}
+
+#questions2 {
+    position: absolute;
+    background-image: url(karakter-beskeder/besked2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 24.6vw;
+    height: 43.6vw;
+    top: 6.25vw;
+    left: 7.6vw;
+    visibility: visible;
+}
+
+#questions3 {
+    position: absolute;
+    background-image: url(karakter-beskeder/besked3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 24.6vw;
+    height: 43.6vw;
+    top: 6.25vw;
+    left: 7.6vw;
+
+}
+
+#questions4 {
+    position: absolute;
+    background-image: url(karakter-beskeder/besked4.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 24.6vw;
+    height: 43.6vw;
+    top: 6.25vw;
+    left: 7.6vw;
+
+}
+
+#questions5 {
+    position: absolute;
+    background-image: url(karakter-beskeder/besked5.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 24.6vw;
+    height: 43.6vw;
+    top: 6.25vw;
+    left: 7.6vw;
+
+
+}
+
+#questions6 {
+    position: absolute;
+    background-image: url(karakter-beskeder/besked6.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 24.6vw;
+    height: 43.6vw;
+    top: 6.25vw;
+    left: 7.6vw;
+
+
+}
+
+/******** Main character  *********/
+
+#hovedperson {
+    position: absolute;
+    background-image: url(karakter-beskeder/pige.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 33vw;
+    top: 6vw;
+    left: 50vw;
+}
+
+#hand_phone {
+    position: absolute;
+    background-image: url(karakter-beskeder/hand_phone2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 56.25vw;
+    top: 0vw;
+    left: -3vw;
+}
+
+/******* Pige  ************/
+
+#pige_sprite {
+    position: absolute;
+    background-image: url(xxx);
+    height: 49vw;
+    width: 35vw;
+    top: 12vw;
+    left: 67vw;
+
+}
+
+#beskeder {
+    position: absolute;
+    background-image: url(Game_Elements/SVG/beskeder2.svg);
+    height: 21vw;
+    width: 35vw;
+    top: 0vw;
+    left: 64vw;
+}
+
+/******* UI  ********/
+
+#points1 {
+    position: absolute;
+    background-image: url(Game_Elements/SVG/point0.svg);
+    height: 18vw;
+    width: 18vw;
+    top: -2vw;
+    left: 84vw;
+}
+
+#points2 {
+    position: absolute;
+    background-image: url(Game_Elements/SVG/point1.svg);
+    height: 18vw;
+    width: 18vw;
+    top: -2vw;
+    left: 84vw;
+}
+
+#points3 {
+    position: absolute;
+    background-image: url(Game_Elements/SVG/point2.svg);
+    height: 18vw;
+    width: 18vw;
+    top: -2vw;
+    left: 84vw;
+}
+
+#points4 {
+    position: absolute;
+    background-image: url(Game_Elements/SVG/point3.svg);
+    height: 18vw;
+    width: 18vw;
+    top: -2vw;
+    left: 84vw;
+}
+
+#points5 {
+    position: absolute;
+    background-image: url(Game_Elements/SVG/point4.svg);
+    height: 18vw;
+    width: 18vw;
+    top: -2vw;
+    left: 84vw;
+}
+
+#points6 {
+    position: absolute;
+    background-image: url(Game_Elements/SVG/point5.svg);
+    height: 18vw;
+    width: 18vw;
+    top: -2vw;
+    left: 84vw;
+}
